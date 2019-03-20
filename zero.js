@@ -1,9 +1,10 @@
+// @ts-check
 import { html, render } from "./web_modules/lit-html.js";
 
 /**
  * ZeroApp template
  *
- * @param {string} name
+ * @type {(name: string) => any}
  */
 const ZeroApp = name =>
   html`
