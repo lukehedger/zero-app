@@ -26,7 +26,8 @@
     "jest": "24.5.0",
     "lint-staged": "8.1.5",
     "prettier": "1.16.4",
-    "serve": "10.1.2"
+    "serve": "10.1.2",
+    "taiko": "0.6.0"
   },
   "husky": {
     "hooks": {
@@ -57,7 +58,14 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-env"
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
     ]
   }
 }
